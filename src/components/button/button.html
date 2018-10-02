@@ -1,0 +1,10 @@
+<button 
+  ion-button block 
+  [disabled]="config?.disablet" 
+  color="{{config?.color}}" 
+  round 
+  [outline]="config?.outline"
+  (click)="config?.action()"
+>
+  <span class="h-txt--uppercase">{{config.txt}}</span>
+</button>

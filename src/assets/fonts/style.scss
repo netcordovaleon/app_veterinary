@@ -1,0 +1,66 @@
+$ionicons-font-path: $font-path !default;
+/* stylelint-disable */
+// sass-lint:disable-all
+@font-face {
+  font-family: 'icomoon';
+  src:  url('#{$ionicons-font-path}/icomoon.eot?85c5tk');
+  src:  url('#{$ionicons-font-path}/icomoon.eot?85c5tk#iefix') format('embedded-opentype'),
+    url('#{$ionicons-font-path}/icomoon.ttf?85c5tk') format('truetype'),
+    url('#{$ionicons-font-path}/icomoon.woff?85c5tk') format('woff'),
+    url('#{$ionicons-font-path}/icomoon.svg?85c5tk#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// sass-lint:enable-all
+/* stylelint-enable */
+[class^='icon-'],
+[class*=' icon-'],
+[class^='ion-ios-icon'],
+[class*='ion-ios-icon'],
+[class^='ion-md-icon'],
+[class*='ion-md-icon'] {
+  /* Didn't feel the need to @extend since this just adds to already existing .ion
+code which I believe is replaced to just ion-icon tag selector in
+www/assets/#{$ionicons-font-path}/ionicons.scss */
+  font-family: 'Ionicons', 'icomoon', sans-serif; //So just add this
+}
+
+//Mixin
+// sass-lint:disable-all
+@mixin make-icon($arg, $val) {
+  .ion-ios-#{$arg}::before,
+  .ion-ios-#{$arg}-circle::before,
+  .ion-ios-#{$arg}-circle-outline::before,
+  .ion-ios-#{$arg}-outline::before,
+  .ion-md-#{$arg}::before,
+  .ion-md-#{$arg}-circle::before,
+  .ion-md-#{$arg}-circle-outline::before,
+  .ion-md-#{$arg}-outline::before {
+    //important to overwrite ionic icons with your own icons
+    content: $val;
+  }
+}
+
+// sass-lint:enable-all
+@include make-icon(check, '\e900');
+@include make-icon(arrowBack, '\e901');
+@include make-icon(isoMapfre, '\e902');
+@include make-icon(mapfre, '\e903');
+@include make-icon(mailOpen, '\e904');
+@include make-icon(view, '\e905');
+@include make-icon(mail, '\e906');
+@include make-icon(back, '\e907');
+@include make-icon(ambulance, '\e908');
+@include make-icon(eyes, '\e909');
+@include make-icon(stole, '\e910');
+@include make-icon(telephone, '\e911');
+@include make-icon(user, '\e912');
+@include make-icon(arrowDow, '\e913');
+@include make-icon(edit, '\e914');
+@include make-icon(help, '\e90a');
+@include make-icon(clinic, '\e90b');
+@include make-icon(car, '\e90c');
+@include make-icon(driver, '\e90d');
+@include make-icon(house, '\e90e');
+@include make-icon(medic, '\e90f');

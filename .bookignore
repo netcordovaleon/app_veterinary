@@ -1,0 +1,13 @@
+*/
+!docs
+.*
+*.xml
+*.*.json
+*.js
+tslint.json
+tsconfig.json
+package.json
+package-lock.json
+yarn.lock
+!*.md
+documentation

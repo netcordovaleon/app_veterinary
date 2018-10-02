@@ -1,0 +1,35 @@
+<ion-content class="h-bg--black-alpha">
+  <div>
+    <div class="c-modal--message h-bg--light">
+      <ion-grid class="sec-content">
+        <ion-row>
+          <ion-col col-10 offset-1 text-center>
+            <img class="ico-modal" src="{{opts.imgs}}" alt="{{opts.imgAlt}}">
+            <h2 class="h-font--17 h-font--bold" text-center>
+              {{opts.title}}
+            </h2>
+            <div class="h-font--14" [innerHtml]="opts.description"></div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <div class="h-mt--3" text-center>
+        <span *ngFor="let item of opts.actions">
+          <button
+            class="h-txt--uppercase"
+            (click)="item.action()"
+            *ngIf="item.showButton"
+            block
+            color="{{item.color}}"
+            ion-button
+            round
+            navPop
+          >
+            {{item.text}}
+          </button>
+        </span>
+      </div>
+    </div>
+  </div>
+</ion-content>
+  

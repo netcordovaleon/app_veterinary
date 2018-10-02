@@ -1,0 +1,23 @@
+.c-select--block {
+  ion-select {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .item-inner {
+    height: 36px !important;
+
+    .select-md {
+      padding: 4px 8px 2px 0;
+    }
+
+    .label-md {
+      margin: 0;
+    }
+  }
+
+  &.item-block {
+    min-height: 2.6rem !important;
+  }
+}
+

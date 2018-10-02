@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Inicio</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="c-login">
+  <div class="sec-top" text-center>
+    <img class="logo" src="../../assets/imgs/petlogo.png" alt="logo">
+    <!-- <img class="img-top" src="../../assets/imgs/login.jpg" alt="banner"> -->
+  </div>
+  <div class="content">
+    <form>
+      <ion-row>
+        <ion-toolbar no-border-top>
+          <ion-segment>
+            <ion-segment-button class="h-mb--10 h-mr--10 h-ml--10" value=2>
+                <ion-icon name="auto"></ion-icon> Cliente
+            </ion-segment-button>
+            <ion-segment-button class="h-mb--10 h-mr--10 h-ml--10" value=1>
+                <ion-icon name="moto"></ion-icon> Proveedor
+            </ion-segment-button>
+          </ion-segment>
+        </ion-toolbar>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12>
+          <mp-input></mp-input>
+          <mp-input></mp-input>
+        </ion-col>
+      </ion-row>
+      <div class="btn h-mt--1">
+        <ion-row>
+          <ion-col col-10 offset-1>
+            <mp-button [config]="buttonEnter"></mp-button>
+          </ion-col>
+          <ion-col col-10 offset-1 text-center>
+            <a (click)="signInPassword()" class="h-font--13">Olvide mi contraseña</a>
+          </ion-col>
+        </ion-row>
+      </div>
+    </form>
+  </div>
+</ion-content>

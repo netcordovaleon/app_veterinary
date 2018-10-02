@@ -1,0 +1,240 @@
+// title section
+
+// fondo
+
+// text-transform
+.h-txt{
+  &--uppercase{
+    text-transform: uppercase;
+  }
+}
+
+// background
+.h-bg {
+
+  &--black-alpha {
+    background: rgba(0, 0, 0, 0.65) !important;
+  }
+
+  &--light {
+    background-color: color($colors, light);
+  }
+
+  &--primary {
+    background-color: color($colors, primary);
+  }
+
+  &--gray {
+    background-color: color($colors, gray) !important;
+  }
+
+  &--transparent {
+    background-color: transparent;
+  }
+}
+
+// color
+.h-c {
+  &--light {
+    color: color($colors, light);
+  }
+}
+
+// posiiton
+.h-position {
+  &--fixed {
+    position: fixed;
+
+    &.bottom {
+      bottom: 0;
+    }
+
+    &.top {
+      top: 0;
+    }
+  }
+
+  &--absolute {
+    position: absolute;
+
+    &.center {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &--relative {
+    position: relative;
+  }
+}
+
+//display
+.h-display {
+  &--fixed {
+    display: fixed;
+  }
+
+  &--inlineblock {
+    display: inline-block;
+  }
+}
+
+// flex
+.h-juscont {
+  &--spacearound {
+    justify-content: space-around;
+  }
+}
+
+// vertical align
+.h-align {
+  &--midle {
+    vertical-align: middle
+  }
+}
+
+// text decoration
+.h-decoration {
+  &--none {
+    text-decoration: none;
+  }
+
+  &--underline {
+    text-decoration: underline
+  }
+}
+
+// font weight
+.h-font {
+  &--thin {
+    font-weight: $thin;
+  }
+
+  &--light {
+    font-weight: $light;
+  }
+
+  &--normal {
+    font-weight: $normal;
+  }
+
+  &--medium {
+    font-weight: $medium;
+  }
+
+  &--bold {
+    font-weight: $bold;
+  }
+
+  &--italic {
+    font-style: italic;
+  }
+}
+
+// cursor
+.h-cursor {
+  &--pointer {
+    cursor: pointer;
+  }
+}
+
+// shadow
+.h-bs-bottom {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.03);
+}
+
+// font size
+$fz-list: 10, 12, 13, 14, 16, 17, 20, 24, 26, 30;
+@each $fz in $fz-list {
+  .h-font--#{$fz} {
+    font-size: 1px * $fz;
+  }
+}
+
+//border
+.h-border {
+  &--left {
+    border-left: 1px solid color($colors, gray2);
+  }
+
+  &--top {
+    border-top: 1px solid color($colors, gray2);
+  }
+}
+
+//border radius
+$borderadius : 5, 15, 35;
+@each $br in $borderadius {
+  .h-borderadius--#{$br} {
+    border-radius: 1px * $br;
+  }
+}
+
+// paddings and margins
+$items: 0, 1, 2, 3, 4, 5, 8;
+@each $item in $items {
+  .h-m--#{$item} { margin: 1rem * $item; }
+  .h-mb--#{$item} { margin-bottom: 1rem * $item; }
+  .h-ml--#{$item} { margin-left: 1rem * $item; }
+  .h-mr--#{$item} { margin-right: 1rem * $item; }
+  .h-mt--#{$item} { margin-top: 1rem * $item; }
+  .h-p--#{$item} { padding: 1rem * $item; }
+  .h-pb--#{$item} { padding-bottom: 1rem * $item; }
+  .h-pl--#{$item} { padding-left: 1rem * $item; }
+  .h-pr--#{$item} { padding-right: 1rem * $item; }
+  .h-pt--#{$item} { padding-top: 1rem * $item; }
+  .h-pv--#{$item} { padding-top: 1rem * $item; padding-bottom: 1rem * $item; }
+  .h-ph--#{$item} { padding-left: 1rem * $item; padding-right: 1rem * $item; }
+}
+
+// paddings and margins decimales
+.h-pv--0-5 {
+  padding-bottom: .5rem;
+  padding-top: .5rem;
+}
+
+// width
+.h-w {
+  &--auto {width: auto}
+  $w-start: 1;
+  $w-end: 10;
+
+  @for $i from $w-start through $w-end {
+    &--#{$i} { width: 10% * $i}
+  }
+}
+
+// img
+.h-img {
+  &--slide {
+    height: 30rem !important;
+    object-fit: cover;
+    width: 100% !important;
+  }
+
+  &--box-sm {
+    height: 13rem !important;
+    object-fit: cover;
+    width: 15rem;
+  }
+
+  &--box-md {
+    height: 20rem !important;
+    object-fit: cover;
+    width: 100% !important;
+  }
+
+  &--box-lg {
+    height: 35rem !important;
+    object-fit: cover;
+    width: 100% !important;
+  }
+
+  &--box-circle {
+    border-radius: 50%;
+    height: 17rem;
+    object-fit: cover;
+    width: 17rem;
+  }
+}
+

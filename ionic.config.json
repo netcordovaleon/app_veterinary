@@ -1,0 +1,7 @@
+{
+  "name": "self_service_app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
