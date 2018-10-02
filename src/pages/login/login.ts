@@ -8,10 +8,10 @@ import { IonicPage, ModalController, NavController } from 'ionic-angular';
 })
 export class LoginPage {
   public buttonEnter: any;
-  
+
   constructor(
     private _modalCtrl: ModalController,
-    private _navCtrl: NavController 
+    private _navCtrl: NavController
   ) {}
 
   public ngOnInit() {
@@ -30,7 +30,7 @@ export class LoginPage {
   private _initValues() {
     this.buttonEnter = { ...this._setButton('secondary', false, false,  this.signIn.bind(this)), txt: 'ingresar'}
   }
-  
+
   public signIn() {
     this._navCtrl.push('HomePage');
   }

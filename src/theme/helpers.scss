@@ -1,6 +1,6 @@
-// title section
-
-// fondo
+.header{
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.03);
+}
 
 // text-transform
 .h-txt{
@@ -24,8 +24,12 @@
     background-color: color($colors, primary);
   }
 
+  &--secondary {
+    background-color: color($colors, secondary);
+  }
+
   &--gray {
-    background-color: color($colors, gray) !important;
+    background-color: color($colors, gray);
   }
 
   &--transparent {
@@ -37,6 +41,14 @@
 .h-c {
   &--light {
     color: color($colors, light);
+  }
+
+  &--gray4 {
+    color: color($colors, gray4);
+  }
+
+  &--white {
+    color: color($colors, white);
   }
 }
 
@@ -76,6 +88,10 @@
 
   &--inlineblock {
     display: inline-block;
+  }
+
+  &--flex {
+    display: flex
   }
 }
 
@@ -155,6 +171,10 @@ $fz-list: 10, 12, 13, 14, 16, 17, 20, 24, 26, 30;
 .h-border {
   &--left {
     border-left: 1px solid color($colors, gray2);
+  }
+
+  &--bottom {
+    border-bottom: 1px solid color($colors, gray2);
   }
 
   &--top {

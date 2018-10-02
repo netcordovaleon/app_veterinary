@@ -30,14 +30,16 @@ $app-direction: ltr;
 // colors so you can add, rename and remove colors as needed.
 // The "primary" color is the only required color in the map.
 $colors: (
-  danger: #f53d3d,
+  danger: #e94e48,
   dark: #222,
   gray: #f9f8eb,
   gray2: #f2f2f2,
   gray3: #999,
+  gray4: #404040,
   light: #eae7e7,
   primary: #155e63,
   secondary: #76b39d,
+  white: #fff,
 );
 
 // Weight

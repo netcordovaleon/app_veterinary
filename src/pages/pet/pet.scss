@@ -1,0 +1,63 @@
+page-pet {
+  .c-pet {
+    .fixed-content,
+    .scroll-content {
+      margin: 0 !important;
+    }
+
+    .sec-top {
+      position: relative;
+    }
+
+    .ico-desc {
+      width: 30px;
+      padding-top: 12px;
+    }
+
+    .edit-pet {
+      background-color: color($colors, danger);
+      border-radius: 50%;
+      bottom: -15px;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.03);
+      color: #fff;
+      font-size: 26px;
+      height: 50px;
+      position: absolute;
+      position: absolute;
+      right: 20px;
+      width: 50px;
+    }
+
+    .img-top {
+      height: 200px;
+      object-fit: cover;
+      width: 100%;
+    }
+    .name-pet {
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      font-size: 35px;
+      color: #fff;
+      font-weight: bold;
+    }
+    .sect-img {
+      width: 100%;
+
+      img {
+        border-radius: 5px;
+        height: 110px;
+        min-height: 100px;
+        object-fit: cover;
+        vertical-align: middle;
+        width: 100%;
+      }
+
+      .sect-info {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+      }
+    }
+  }
+}
